@@ -1,0 +1,5 @@
+@font-face {
+    font-family: 'Avenir';
+    src: url(./Avenir-Next-LT-Pro.otf);
+}
+@import "tailwindcss";

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calendar</title>
+
+    <!-- tailwind cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- remix icon cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css"
+        integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- custom css -->
+     <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-white dark:bg-[#333333] flex items-center justify-center h-screen font-['Avenir']">
+    <!-- calendar container -->
+     <section class="w-[310px] h-[310px] rounded-lg p-6 bg-white shadow dark:bg-[#464646] space-y-6">
+
+        <!--monthName -->
+         <div class="flex items-center justify-between ">
+            <i class="ri-arrow-left-wide-line text-[1rem] text-[#B5BEC6]"></i>
+            <h4 class="text-[#4A5660] dark:text-white text-sm font-bold">September 2021</h4>
+            <i class="ri-arrow-right-wide-line text-[1rem] text-[#B5BEC6]"></i>
+         </div>
+
+         <!-- dayName -->
+          <div class="text-[#B5BEC6] text-[10px] flex items-center justify-around gap-2 ont-bold">
+            <h5>SAN</h5>
+            <h5>MON</h5>
+            <h5>TUE</h5>
+            <h5>WED</h5>
+            <h5>THU</h5>
+            <h5>FRI</h5>
+            <h5>SAT</h5>
+          </div>
+
+          <!-- date -->
+           <div class="grid grid-cols-7 place-items-center gap-2">
+                <div class="w-[30px] h-[30px] text-[#4A5660] dark:text-white text-[1rem] font-bold hover:bg-[#F04D23]  hover:text-white hover:rounded-[50%] flex items-center justify-center  transition-all cursor-pointer">
+                    <p>1</p>
+                </div>
+                <div class="w-[30px] h-[30px] text-[#4A5660] dark:text-white text-[1rem] font-bold hover:bg-[#F04D23]  hover:text-white hover:rounded-[50%] flex items-center justify-center  transition-all cursor-pointer">
+                    <p>2</p>
+                </div>
+                <div class="w-[30px] h-[30px] text-[#4A5660] dark:text-white text-[1rem] font-bold hover:bg-[#F04D23]  hover:text-white hover:rounded-[50%] flex items-center justify-center  transition-all cursor-pointer">
+                    <p>3</p>
+                </div>
+                <div class="w-[30px] h-[30px] text-[#4A5660] dark:text-white text-[1rem] font-bold hover:bg-[#F04D23]  hover:text-white hover:rounded-[50%] flex items-center justify-center  transition-all cursor-pointer">
+                    <p>4</p>
+                </div>
+                <div class="w-[30px] h-[30px] text-[#4A5660] dark:text-white text-[1rem] font-bold hover:bg-[#F04D23]  hover:text-white hover:rounded-[50%] flex items-center justify-center  transition-all cursor-pointer">
+                    <p>5</p>
+                </div>
+                <div class="w-[30px] h-[30px] text-[#4A5660] dark:text-white text-[1rem] font-bold hover:bg-[#F04D23]  hover:text-white hover:rounded-[50%] flex items-center justify-center  transition-all cursor-pointer">
+                    <p>6</p>
+                </div>
+                <div class="w-[30px] h-[30px] text-[#4A5660] dark:text-white text-[1rem] font-bold hover:bg-[#F04D23]  hover:text-white hover:rounded-[50%] flex items-center justify-center  transition-all cursor-pointer">
+                    <p>7</p>
+                </div>
+                <div class="w-[30px] h-[30px] text-[#4A5660] dark:text-white text-[1rem] font-bold hover:bg-[#F04D23]  hover:text-white hover:rounded-[50%] flex items-center justify-center  transition-all cursor-pointer">
+                    <p>8</p>
+                </div>
+                <div class="w-[30px] h-[30px] text-[#4A5660] dark:text-white text-[1rem] font-bold hover:bg-[#F04D23]  hover:text-white hover:rounded-[50%] flex items-center justify-center  transition-all cursor-pointer">
+                    <p>9</p>
+                </div>
+                <div class="w-[30px] h-[30px] text-[#4A5660] dark:text-white text-[1rem] font-bold hover:bg-[#F04D23]  hover:text-white hover:rounded-[50%] flex items-center justify-center  transition-all cursor-pointer">
+                    <p>10</p>
+                </div>
+                <div class="w-[30px] h-[30px] text-[#4A5660] dark:text-white text-[1rem] font-bold hover:bg-[#F04D23]  hover:text-white hover:rounded-[50%] flex items-center justify-center  transition-all cursor-pointer">
+                    <p>11</p>
+                </div>
+                <div class="w-[30px] h-[30px] text-[#4A5660] dark:text-white text-[1rem] font-bold hover:bg-[#F04D23]  hover:text-white hover:rounded-[50%] flex items-center justify-center  transition-all cursor-pointer">
+                    <p>12</p>
+                </div>
+                <div class="w-[30px] h-[30px] text-[#4A5660] dark:text-white text-[1rem] font-bold hover:bg-[#F04D23]  hover:text-white hover:rounded-[50%] flex items-center justify-center  transition-all cursor-pointer">
+                    <p>13</p>
+                </div>
+                <div class="w-[30px] h-[30px] text-[#4A5660] dark:text-white text-[1rem] font-bold hover:bg-[#F04D23]  hover:text-white hover:rounded-[50%] flex items-center justify-center  transition-all cursor-pointer">
+                    <p>14</p>
+                </div>
+                <div class="w-[30px] h-[30px] text-[#4A5660] dark:text-white text-[1rem] font-bold hover:bg-[#F04D23]  hover:text-white hover:rounded-[50%] flex items-center justify-center  transition-all cursor-pointer">
+                    <p>15</p>
+                </div>
+                <div class="w-[30px] h-[30px] text-[#4A5660] dark:text-white text-[1rem] font-bold hover:bg-[#F04D23]  hover:text-white hover:rounded-[50%] flex items-center justify-center  transition-all cursor-pointer">
+                    <p>16</p>
+                </div>
+                <div class="w-[30px] h-[30px] text-[#4A5660] dark:text-white text-[1rem] font-bold hover:bg-[#F04D23]  hover:text-white hover:rounded-[50%] flex items-center justify-center  transition-all cursor-pointer">
+                    <p>17</p>
+                </div>
+                <div class="w-[30px] h-[30px] text-[#4A5660] dark:text-white text-[1rem] font-bold hover:bg-[#F04D23]  hover:text-white hover:rounded-[50%] flex items-center justify-center  transition-all cursor-pointer">
+                    <p>18</p>
+                </div>
+                <div class="w-[30px] h-[30px] text-[#4A5660] dark:text-white text-[1rem] font-bold hover:bg-[#F04D23]  hover:text-white hover:rounded-[50%] flex items-center justify-center  transition-all cursor-pointer">
+                    <p>19</p>
+                </div>
+                <div class="w-[30px] h-[30px] text-[#4A5660] dark:text-white text-[1rem] font-bold hover:bg-[#F04D23]  hover:text-white hover:rounded-[50%] flex items-center justify-center  transition-all cursor-pointer">
+                    <p>20</p>
+                </div>
+                <div class="w-[30px] h-[30px] text-[#4A5660] dark:text-white text-[1rem] font-bold hover:bg-[#F04D23]  hover:text-white hover:rounded-[50%] flex items-center justify-center  transition-all cursor-pointer">
+                    <p>21</p>
+                </div>
+                <div class="w-[30px] h-[30px] text-[#4A5660] dark:text-white text-[1rem] font-bold hover:bg-[#F04D23]  hover:text-white hover:rounded-[50%] flex items-center justify-center  transition-all cursor-pointer">
+                    <p>22</p>
+                </div>
+                <div class="w-[30px] h-[30px] text-[#4A5660] dark:text-white text-[1rem] font-bold hover:bg-[#F04D23]  hover:text-white hover:rounded-[50%] flex items-center justify-center  transition-all cursor-pointer">
+                    <p>23</p>
+                </div>
+                <div class="w-[30px] h-[30px] text-[#4A5660] dark:text-white text-[1rem] font-bold hover:bg-[#F04D23]  hover:text-white hover:rounded-[50%] flex items-center justify-center  transition-all cursor-pointer">
+                    <p>24</p>
+                </div>
+                <div class="w-[30px] h-[30px] text-[#4A5660] dark:text-white text-[1rem] font-bold hover:bg-[#F04D23]  hover:text-white hover:rounded-[50%] flex items-center justify-center  transition-all cursor-pointer">
+                    <p>25</p>
+                </div>
+                <div class="w-[30px] h-[30px] text-[#4A5660] dark:text-white text-[1rem] font-bold hover:bg-[#F04D23]  hover:text-white hover:rounded-[50%] flex items-center justify-center  transition-all cursor-pointer">
+                    <p>26</p>
+                </div>
+                <div class="w-[30px] h-[30px] text-[#4A5660] dark:text-white text-[1rem] font-bold hover:bg-[#F04D23]  hover:text-white hover:rounded-[50%] flex items-center justify-center  transition-all cursor-pointer">
+                    <p>27</p>
+                </div>
+                <div class="w-[30px] h-[30px] text-[#4A5660] dark:text-white text-[1rem] font-bold hover:bg-[#F04D23]  hover:text-white hover:rounded-[50%] flex items-center justify-center  transition-all cursor-pointer">
+                    <p>28</p>
+                </div>
+                <div class="w-[30px] h-[30px] text-[#4A5660] dark:text-white text-[1rem] font-bold hover:bg-[#F04D23]  hover:text-white hover:rounded-[50%] flex items-center justify-center  transition-all cursor-pointer">
+                    <p>29</p>
+                </div>
+                <div class="w-[30px] h-[30px] text-[#4A5660] dark:text-white text-[1rem] font-bold hover:bg-[#F04D23]  hover:text-white hover:rounded-[50%] flex items-center justify-center  transition-all cursor-pointer">
+                    <p>30</p>
+                </div>
+                <div class="w-[30px] h-[30px] text-[#4A5660] dark:text-white text-[1rem] font-bold hover:bg-[#F04D23]  hover:text-white hover:rounded-[50%] flex items-center justify-center  transition-all cursor-pointer">
+                    <p>31</p>
+                </div>
+           </div>
+     </section>
+</body>
+
+</html>
